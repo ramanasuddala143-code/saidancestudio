@@ -1,0 +1,211 @@
+.registration-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.registration-content {
+  flex: 1 1 400px;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  border-right: 1px solid var(--glass-border);
+}
+
+.registration-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.qr-code-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.02);
+  border-color: rgba(255, 215, 0, 0.3);
+  margin-bottom: 40px;
+}
+
+.qr-icon {
+  font-size: 3rem;
+  color: var(--accent-cyan);
+}
+
+.qr-code-section h4 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.qr-code-section p {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.qr-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.qr-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-info h4 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+.contact-info p svg {
+  color: var(--accent-magenta);
+}
+
+/* Form Styles */
+.form-container {
+  flex: 1 1 500px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration-form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.w-50 {
+  flex: 1;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  color: var(--text-secondary);
+}
+
+.input-group input:not([type="file"]),
+.input-group textarea,
+.input-group select {
+  width: 100%;
+  padding: 16px 16px 16px 50px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  color: #fff;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.input-group.select-group select {
+  padding-left: 16px;
+  cursor: pointer;
+}
+.input-group.select-group select option {
+  background: var(--bg-color);
+  color: #fff;
+}
+
+.w-50 input {
+  padding-left: 16px !important;
+}
+.w-50.input-group .input-icon + input {
+  padding-left: 50px !important;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.file-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.file-group label {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.file-group input[type="file"] {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px dashed var(--glass-border);
+  padding: 15px;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-submit-btn {
+  width: 100%;
+  padding: 18px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.success-message {
+  text-align: center;
+  padding: 40px;
+  width: 100%;
+}
+
+.success-message h3 {
+  font-size: 2rem;
+  color: var(--accent-cyan);
+  margin-bottom: 15px;
+}
+
+.success-message p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .registration-content, .form-container {
+    padding: 30px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,98 @@
+.pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.registration-fee-pill {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 215, 0, 0.5); /* Gold border */
+  font-size: 1.1rem;
+  color: #fff;
+  background: rgba(255, 215, 0, 0.1);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.registration-fee-pill strong {
+  color: var(--accent-gold);
+  font-size: 1.3rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.pricing-card {
+  width: 100%;
+  max-width: 320px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top-width: 4px;
+}
+
+.batch-icon {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover .batch-icon {
+  transform: rotateY(180deg);
+}
+
+.batch-title {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.batch-age {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  padding: 5px 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+}
+
+.batch-price-container {
+  width: 100%;
+  padding-top: 25px;
+  border-top: 1px solid; /* color set via inline style */
+  margin-bottom: 30px;
+}
+
+.batch-price {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.batch-duration {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.batch-btn {
+  width: 100%;
+  font-size: 1rem;
+  padding: 14px;
+  margin-top: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.batch-btn:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
